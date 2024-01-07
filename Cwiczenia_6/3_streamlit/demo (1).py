@@ -6,32 +6,32 @@ import datetime
 
 st.title("Streamlit demo")
 
-# st.header('nagłówek')
-# st.subheader('pod nagłówek')
+st.header('nagłówek')
+st.subheader('pod nagłówek')
 
-# st.text('hello world')
+st.text('hello world')
 
-# st.markdown('# this is markdown 1A')
-# st.markdown('## this is markdown 2')
-# st.markdown('### this is markdown 3')
-# st.markdown('# this is markdown 1B')
+st.markdown('# this is markdown 1A')
+st.markdown('## this is markdown 2')
+st.markdown('### this is markdown 3')
+st.markdown('# this is markdown 1B')
 
-# st.success('successful')
+st.success('successful')
 
-# st.info('information')
+st.info('information')
 
-# st.error('system error')
+st.error('system error')
 
-# st.exception('exception occured')
+st.exception('exception occured')
 
-# st.help(range)
+st.help(range)
 
-# st.write('some text')
+st.write('some text')
 
-# st.write(range(10))
+st.write(range(10))
 
-# img = Image.open('testImg.png')
-# st.image(img, width=300, caption='simple image')
+img = Image.open('testImg.png')
+st.image(img, width=300, caption='simple image')
 
 # dodawanie audio i video
 with open('Richmond.mov', 'rb') as vid_file:
@@ -133,29 +133,29 @@ level = st.slider("What is your level", 1, 100)
 
 
 # # uploading data
-# data = st.file_uploader("Upload your dataset", type=['csv'])
-# if data is not None:
-#     df = pd.read_csv(data)
-#     st.dataframe(df.head(10))
+data = st.file_uploader("Upload your dataset", type=['csv'])
+if data is not None:
+    df = pd.read_csv(data)
+    st.dataframe(df.head(10))
 
 # # Plot
-# st.set_option('deprecation.showPyplotGlobalUse', False)
-# all_columns_names = df.columns.to_list()
-# selected_column_names = st.multiselect("Select columns to plot", all_columns_names)
-# plot_data = df[selected_column_names]
-# st.area_chart(plot_data)
-# st.bar_chart(plot_data)
-# st.line_chart(plot_data)
-# plot_dataNN = df[selected_column_names].plot(kind='hist')
-# st.write(plot_dataNN)
-# st.pyplot()
+st.set_option('deprecation.showPyplotGlobalUse', False)
+all_columns_names = df.columns.to_list()
+selected_column_names = st.multiselect("Select columns to plot", all_columns_names)
+plot_data = df[selected_column_names]
+st.area_chart(plot_data)
+st.bar_chart(plot_data)
+st.line_chart(plot_data)
+plot_dataNN = df[selected_column_names].plot(kind='hist')
+st.write(plot_dataNN)
+st.pyplot()
 
-# plot_dataNN = df[selected_column_names].plot(kind='box')
-# st.write(plot_dataNN)
-# st.pyplot()
+plot_dataNN = df[selected_column_names].plot(kind='box')
+st.write(plot_dataNN)
+st.pyplot()
 
 # # dataframe
-# st.dataframe(df)
+st.dataframe(df)
 
 # # tables
-# st.table(df)
+st.table(df)
