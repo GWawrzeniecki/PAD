@@ -1,5 +1,5 @@
 carat,clarity,color,cut,x dimension,y dimension,z dimension,depth,table,price
-1.4,SI2,D,Very Good,7.3,,4.5,62.6,59,
+1.4,SI2,D,Very Good,7.3,,4.5,62.6,59,11425
 0.9,IF,G,Very Good,6.3,,3.9,,57,6700
 0.55,I1,I,Premium,5.3,,3.28,62.3,57,2500
 1.4,VVS2,H,Good,7.2,,4.45,62.7,58,12000
@@ -112,14 +112,14 @@ carat,clarity,color,cut,x dimension,y dimension,z dimension,depth,table,price
 0.6,VVS2,G,Good,5.5,5.49,,,58,2800
 0.55,VVS2,D,Very Good,5.4,,3.34,62.4,56,2800
 0.4,VVS1,F,Good,4.8,4.77,2.96,,55,2700
-0.9,SI2,H,Fair,6.1,6.12,3.78,62.4,,2600
+0.9,SI2,H,Fair,6.1,6.12,3.78,62.4,,6740
 0.55,VVS2,J,Ideal,5.4,,3.35,62.3,56,2600
 0.45,VVS1,G,Ideal,4.9,,3.03,62.1,59,2600
 0.4,IF,G,Ideal,4.7,4.69,2.91,,57,2600
 0.45,VVS2,E,Good,4.9,,3.02,62.4,55,2600
 0.45,VVS1,E,Premium,4.8,4.81,,62.5,55,2500
 0.55,I1,J,Premium,5.4,5.42,3.35,62.1,,2500
-0.9,I1,J,Fair,6.0,,3.7,61.7,,2400
+0.9,I1,J,Fair,6.0,,3.7,61.7,,6740
 0.4,Si1,F,Fair,4.7,,2.92,62.1,56,2400
 0.5,Si1,G,Very Good,5.2,,3.2,,56,2300
 0.55,I1,G,Very Good,5.3,,3.28,62.4,57,2300

@@ -6,9 +6,22 @@ st.set_page_config(
     page_icon="💎",
 )
 
-st.title("Wyroby złote - Analiza zbioru danych")
-st.header('PAD')
-st.subheader('Grzegorz Wawrzeniecki')
+# st.title("Analiza zbioru danych")
+# st.header("PAD")
+#
+# st.markdown("# Wyroby złote - próbka danych")
+# data = pd.read_csv('messy_data.csv')
+# st.dataframe(data.head(20), hide_index=True)
+#
+# st.subheader('Grzegorz Wawrzeniecki')
 
-data = pd.read_csv('prepared_data.csv')
-st.dataframe(data.head(10))
+
+
+st.markdown("# Analiza zbioru danych")
+st.markdown("## PAD")
+
+st.markdown("## Wyroby złote - próbka danych")
+data = pd.read_csv('messy_data.csv')
+st.dataframe(data.head(20), hide_index=True)
+
+st.markdown('## Grzegorz Wawrzeniecki')

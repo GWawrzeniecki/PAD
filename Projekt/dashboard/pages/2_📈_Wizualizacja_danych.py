@@ -30,7 +30,7 @@ st.plotly_chart(fig1, use_container_width=True)
 # Liczebność kategorii
 column_name = st.selectbox("Liczebność kategorii", ("clarity", "color", "cut"))
 category_counts = data[column_name].value_counts()
-fig1 = px.bar(x=category_counts.index, y=category_counts.values, title='Liczebność kategorii', labels={'x': 'Kategoria','y': 'Liczebność'})
+fig1 = px.bar(x=category_counts.index, y=category_counts.values, color=category_counts.index, title='Liczebność kategorii', labels={'x': 'Kategoria', 'y': 'Liczebność'})
 st.plotly_chart(fig1, use_container_width=True)
 
 # Rozkład kategorii

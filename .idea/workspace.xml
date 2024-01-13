@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f28b362-bddd-4482-bb3c-ee23de84ba99" name="Changes" comment="regression model 0.1">
-      <change afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/1_Analiza_danych.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projekt/data_prepare.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cwiczenia_7/PAD_07_Testowanie Hipotez Statystycznych.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Cwiczenia_7/PAD_07_Testowanie Hipotez Statystycznych.ipynb" afterDir="false" />
+    <list default="true" id="3f28b362-bddd-4482-bb3c-ee23de84ba99" name="Changes" comment="dashboard 0.4">
+      <change afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/3__Model_regresji.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/3_🧮_Model_regresji.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/4__Wizualizacja_regresji.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/4_📈_Wizualizacja_regresji.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projekt/regression_model.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cwiczenia_7/PAD_08_Modelowanie Statystyczne.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Cwiczenia_7/PAD_08_Modelowanie Statystyczne.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/dashboard/Home.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/Home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/1__Wizualizacja_danych.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/1_📈_Wizualizacja_danych.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/2__Wizualizacja_danych.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/2_📈_Wizualizacja_danych.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/1_Analiza_danych.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/1_️_Analiza_danych.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/1_🗃️_Analiza_danych.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/2__Wizualizacja_danych.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/2_📈_Wizualizacja_danych.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/2__Wizualizacja_danych.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/2_📈_Wizualizacja_danych.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/data_prepare.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/data_prepare.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/data_prepare.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/data_prepare.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/prepared_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/prepared_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/regression_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/regression_model.ipynb" afterDir="false" />
     </list>
@@ -215,7 +218,7 @@
       <workItem from="1704626174842" duration="12538000" />
       <workItem from="1704994778118" duration="5887000" />
       <workItem from="1705053958720" duration="773000" />
-      <workItem from="1705147422586" duration="6337000" />
+      <workItem from="1705147422586" duration="15432000" />
     </task>
     <task id="LOCAL-00001" summary="project 0.01">
       <option name="closed" value="true" />
@@ -297,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705053977985</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="dashboard 0.4">
+      <option name="closed" value="true" />
+      <created>1705160628029</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705160628029</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +334,19 @@
     <MESSAGE value="deleted unnecessary code" />
     <MESSAGE value="dashboard" />
     <MESSAGE value="regression model 0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="regression model 0.1" />
+    <MESSAGE value="dashboard 0.4" />
+    <option name="LAST_COMMIT_MESSAGE" value="dashboard 0.4" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Projekt/dashboard/pages/4_📈_Wizualizacja_regresji.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PAD$plot__1_.coverage" NAME="plot (1) Coverage Results" MODIFIED="1704627710744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cwiczenia_6/3_streamlit" />

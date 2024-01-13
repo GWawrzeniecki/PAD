@@ -953,7 +953,7 @@ data[price_nan_mask_merged]
 
 
 ```python
- data.duplicated().sum()
+data.duplicated().sum()
 # Nie ma wierszy identycznych
 
 # Sprawdzmy duplikaty biorąc pod uwage ponizsze kolumny
@@ -1051,21 +1051,13 @@ merged_data['mean_price'] = merged_data['mean_price'].astype('Int32')
 merged_data_na_price_mask = merged_data['price'].isna()
 
 merged_data['price'] = merged_data['price'].fillna(merged_data['mean_price']) # inplace=true dawalo warning 
-
-# Po ponownym obejrzeniu wykresu zauważyłem poniższy rekord, którego cena znacząco odbiega od normy
-# Jako że nie ma innych wierszy z caratem równym 1.6 na razie go usune
-cleaned_data = merged_data[merged_data['carat'] != 1.6]
 ```
 
 
 ```python
-data = cleaned_data.drop(columns=['mean_price'])
+data = merged_data.drop(columns=['mean_price'])
 data[merged_data_na_price_mask]
 ```
-
-    C:\Users\grzeg\AppData\Local\Temp\ipykernel_26228\1991026144.py:2: UserWarning: Boolean Series key will be reindexed to match DataFrame index.
-      data[merged_data_na_price_mask]
-    
 
 
 
@@ -1145,6 +1137,532 @@ data[merged_data_na_price_mask]
 </div>
 
 
+
+
+```python
+# Dla tego rekordu nie udało się znaleźć dopasowania
+data[data['price'].isna()]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>carat</th>
+      <th>clarity</th>
+      <th>color</th>
+      <th>cut</th>
+      <th>x dimension</th>
+      <th>y dimension</th>
+      <th>z dimension</th>
+      <th>depth</th>
+      <th>table</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.4</td>
+      <td>SI2</td>
+      <td>D</td>
+      <td>Very Good</td>
+      <td>7.3</td>
+      <td>NaN</td>
+      <td>4.5</td>
+      <td>62.6</td>
+      <td>59</td>
+      <td>&lt;NA&gt;</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+# Znajdziemy rekordy z takim samym caratem bez takiego samego szlifu
+mean = data[data['carat'] == 1.4]['price'].mean()
+data['price'] = data['price'].fillna(mean)
+```
+
+
+```python
+data[data['carat'] == 1.4]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>carat</th>
+      <th>clarity</th>
+      <th>color</th>
+      <th>cut</th>
+      <th>x dimension</th>
+      <th>y dimension</th>
+      <th>z dimension</th>
+      <th>depth</th>
+      <th>table</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1.4</td>
+      <td>SI2</td>
+      <td>D</td>
+      <td>Very Good</td>
+      <td>7.3</td>
+      <td>NaN</td>
+      <td>4.50</td>
+      <td>62.6</td>
+      <td>59</td>
+      <td>11425</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1.4</td>
+      <td>VVS2</td>
+      <td>H</td>
+      <td>Good</td>
+      <td>7.2</td>
+      <td>NaN</td>
+      <td>4.45</td>
+      <td>62.7</td>
+      <td>58</td>
+      <td>12000</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1.4</td>
+      <td>VVS1</td>
+      <td>E</td>
+      <td>Premium</td>
+      <td>7.1</td>
+      <td>NaN</td>
+      <td>4.40</td>
+      <td>62.7</td>
+      <td>58</td>
+      <td>11500</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1.4</td>
+      <td>VVS2</td>
+      <td>H</td>
+      <td>Good</td>
+      <td>7.1</td>
+      <td>NaN</td>
+      <td>4.39</td>
+      <td>62.7</td>
+      <td>59</td>
+      <td>11200</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1.4</td>
+      <td>IF</td>
+      <td>D</td>
+      <td>Good</td>
+      <td>7.1</td>
+      <td>7.12</td>
+      <td>NaN</td>
+      <td>62.4</td>
+      <td>59</td>
+      <td>11000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+# Po ponownym obejrzeniu wykresu zauważyłem poniższy rekord, którego cena znacząco odbiega od normy
+data[data['carat'] == 1.6]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>carat</th>
+      <th>clarity</th>
+      <th>color</th>
+      <th>cut</th>
+      <th>x dimension</th>
+      <th>y dimension</th>
+      <th>z dimension</th>
+      <th>depth</th>
+      <th>table</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>91</th>
+      <td>1.6</td>
+      <td>I1</td>
+      <td>I</td>
+      <td>Fair</td>
+      <td>7.3</td>
+      <td>7.28</td>
+      <td>4.5</td>
+      <td>NaN</td>
+      <td>54</td>
+      <td>3400</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+# Jako że nie ma innych wierszy z caratem równym 1.6 na razie go usunę
+data = data[data['carat'] != 1.6]
+```
+
+
+```python
+# Cena dwóch ostatnich wierszy też odbiega od normy
+data[data['carat']==0.9]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>carat</th>
+      <th>clarity</th>
+      <th>color</th>
+      <th>cut</th>
+      <th>x dimension</th>
+      <th>y dimension</th>
+      <th>z dimension</th>
+      <th>depth</th>
+      <th>table</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0.9</td>
+      <td>IF</td>
+      <td>G</td>
+      <td>Very Good</td>
+      <td>6.3</td>
+      <td>NaN</td>
+      <td>3.90</td>
+      <td>NaN</td>
+      <td>57</td>
+      <td>6700</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>0.9</td>
+      <td>SI2</td>
+      <td>G</td>
+      <td>Premium</td>
+      <td>6.3</td>
+      <td>6.31</td>
+      <td>3.90</td>
+      <td>NaN</td>
+      <td>58</td>
+      <td>6900</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>0.9</td>
+      <td>SI2</td>
+      <td>H</td>
+      <td>Premium</td>
+      <td>6.2</td>
+      <td>6.21</td>
+      <td>3.84</td>
+      <td>NaN</td>
+      <td>59</td>
+      <td>6800</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>0.9</td>
+      <td>Si1</td>
+      <td>I</td>
+      <td>Very Good</td>
+      <td>6.2</td>
+      <td>NaN</td>
+      <td>3.85</td>
+      <td>62.2</td>
+      <td>59</td>
+      <td>6700</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>0.9</td>
+      <td>Si1</td>
+      <td>Colorless</td>
+      <td>Premium</td>
+      <td>6.2</td>
+      <td>6.22</td>
+      <td>NaN</td>
+      <td>62.3</td>
+      <td>59</td>
+      <td>6600</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>0.9</td>
+      <td>SI2</td>
+      <td>H</td>
+      <td>Fair</td>
+      <td>6.1</td>
+      <td>6.12</td>
+      <td>3.78</td>
+      <td>62.4</td>
+      <td>&lt;NA&gt;</td>
+      <td>2600</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>0.9</td>
+      <td>I1</td>
+      <td>J</td>
+      <td>Fair</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>3.70</td>
+      <td>61.7</td>
+      <td>&lt;NA&gt;</td>
+      <td>2400</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+data.loc[(data['carat'] == 0.9) & (data['price'] == 2400), 'price'] = np.nan
+data.loc[(data['carat'] == 0.9) & (data['price'] == 2600), 'price'] = np.nan
+```
+
+
+```python
+data[data['carat']==0.9]
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>carat</th>
+      <th>clarity</th>
+      <th>color</th>
+      <th>cut</th>
+      <th>x dimension</th>
+      <th>y dimension</th>
+      <th>z dimension</th>
+      <th>depth</th>
+      <th>table</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>0.9</td>
+      <td>IF</td>
+      <td>G</td>
+      <td>Very Good</td>
+      <td>6.3</td>
+      <td>NaN</td>
+      <td>3.90</td>
+      <td>NaN</td>
+      <td>57</td>
+      <td>6700</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>0.9</td>
+      <td>SI2</td>
+      <td>G</td>
+      <td>Premium</td>
+      <td>6.3</td>
+      <td>6.31</td>
+      <td>3.90</td>
+      <td>NaN</td>
+      <td>58</td>
+      <td>6900</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>0.9</td>
+      <td>SI2</td>
+      <td>H</td>
+      <td>Premium</td>
+      <td>6.2</td>
+      <td>6.21</td>
+      <td>3.84</td>
+      <td>NaN</td>
+      <td>59</td>
+      <td>6800</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>0.9</td>
+      <td>Si1</td>
+      <td>I</td>
+      <td>Very Good</td>
+      <td>6.2</td>
+      <td>NaN</td>
+      <td>3.85</td>
+      <td>62.2</td>
+      <td>59</td>
+      <td>6700</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>0.9</td>
+      <td>Si1</td>
+      <td>Colorless</td>
+      <td>Premium</td>
+      <td>6.2</td>
+      <td>6.22</td>
+      <td>NaN</td>
+      <td>62.3</td>
+      <td>59</td>
+      <td>6600</td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td>0.9</td>
+      <td>SI2</td>
+      <td>H</td>
+      <td>Fair</td>
+      <td>6.1</td>
+      <td>6.12</td>
+      <td>3.78</td>
+      <td>62.4</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>0.9</td>
+      <td>I1</td>
+      <td>J</td>
+      <td>Fair</td>
+      <td>6.0</td>
+      <td>NaN</td>
+      <td>3.70</td>
+      <td>61.7</td>
+      <td>&lt;NA&gt;</td>
+      <td>&lt;NA&gt;</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+mean = data[data['carat'] == 0.9]['price'].mean()
+data['price'] = data['price'].fillna(mean)
+```
 
 # Zapisanie danych
 
