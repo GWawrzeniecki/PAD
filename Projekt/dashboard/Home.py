@@ -21,7 +21,7 @@ st.markdown("# Analiza zbioru danych")
 st.markdown("## PAD")
 
 st.markdown("## Wyroby złote - próbka danych")
-data = pd.read_csv('PAD/Projekt/messy_data.csv')
+data = pd.read_csv('Projekt/messy_data.csv')
 st.dataframe(data.head(20), hide_index=True)
 
 st.markdown('## Grzegorz Wawrzeniecki')
