@@ -14,4 +14,8 @@ def convert_and_display_notebook(notebook_path):
 
 st.markdown("# Budowa modelu regresji")
 
-convert_and_display_notebook("Projekt/regression_model.ipynb")
+# convert_and_display_notebook("Projekt/regression_model.ipynb")
+
+with open("Projekt/regression_model.ipynb", "r", encoding="utf-8") as f:
+    markdown_content = f.read()
+st.markdown(markdown_content, unsafe_allow_html=True)

@@ -13,4 +13,8 @@ def convert_and_display_notebook(notebook_path):
 
 st.markdown("# Analiza i czyszczenie zbioru danych")
 
-convert_and_display_notebook("Projekt/data_prepare.ipynb")
+# convert_and_display_notebook("Projekt/data_prepare.ipynb")
+
+with open("Projekt/data_prepare.ipynb", "r", encoding="utf-8") as f:
+    markdown_content = f.read()
+st.markdown(markdown_content, unsafe_allow_html=True)

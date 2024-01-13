@@ -7,9 +7,7 @@
     <list default="true" id="3f28b362-bddd-4482-bb3c-ee23de84ba99" name="Changes" comment="added requirements.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/1_️_Analiza_danych.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/1_🗃️_Analiza_danych.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/1_️_Analiza_danych.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/1_🗃️_Analiza_danych.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/2__Wizualizacja_danych.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/2_📈_Wizualizacja_danych.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/2__Wizualizacja_danych.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/2_📈_Wizualizacja_danych.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/3__Model_regresji.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/3_🧮_Model_regresji.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/3__Model_regresji.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/3_🧮_Model_regresji.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/4__Wizualizacja_regresji.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/4_📈_Wizualizacja_regresji.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/4__Wizualizacja_regresji.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/4_📈_Wizualizacja_regresji.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +209,7 @@
       <workItem from="1704626174842" duration="12538000" />
       <workItem from="1704994778118" duration="5887000" />
       <workItem from="1705053958720" duration="773000" />
-      <workItem from="1705147422586" duration="16921000" />
+      <workItem from="1705147422586" duration="17250000" />
     </task>
     <task id="LOCAL-00001" summary="project 0.01">
       <option name="closed" value="true" />
@@ -365,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705173056309</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added requirements.txt">
+      <option name="closed" value="true" />
+      <created>1705173108487</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1705173108487</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
