@@ -16,6 +16,6 @@ st.markdown("# Budowa modelu regresji")
 
 # convert_and_display_notebook("Projekt/regression_model.ipynb")
 
-with open("Projekt/regression_model.ipynb", "r", encoding="utf-8") as f:
+with open("Projekt/regression_model.md", "r", encoding="utf-8") as f:
     markdown_content = f.read()
 st.markdown(markdown_content, unsafe_allow_html=True)
