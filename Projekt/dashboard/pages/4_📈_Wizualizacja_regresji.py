@@ -6,7 +6,7 @@ import pandas as pd
 
 st.markdown("# Wizualizacja modelu regresji")
 
-data = pd.read_csv('pad/Projekt/prepared_data.csv')
+data = pd.read_csv('Projekt/prepared_data.csv')
 model = smf.ols("price ~ carat + clarity", data=data).fit()
 
 data["fitted"] = model.fittedvalues

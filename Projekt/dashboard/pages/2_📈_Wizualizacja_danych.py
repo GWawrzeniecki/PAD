@@ -10,7 +10,7 @@ st.write(
     """Opis """
 )
 
-data = pd.read_csv('pad/Projekt/prepared_data.csv')
+data = pd.read_csv('Projekt/prepared_data.csv')
 
 # Rozkład zmiennych
 column_name = st.selectbox("Rozkład", ("carat", "table", "depth"))

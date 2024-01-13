@@ -14,4 +14,4 @@ def convert_and_display_notebook(notebook_path):
 
 st.markdown("# Budowa modelu regresji")
 
-convert_and_display_notebook("pad/Projekt/regression_model.ipynb")
+convert_and_display_notebook("Projekt/regression_model.ipynb")
