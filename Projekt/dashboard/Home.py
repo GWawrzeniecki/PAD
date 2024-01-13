@@ -10,5 +10,5 @@ st.title("Wyroby złote - Analiza zbioru danych")
 st.header('PAD')
 st.subheader('Grzegorz Wawrzeniecki')
 
-data = pd.read_csv('C:/Users/grzeg/PycharmProjects/PAD/Projekt/prepared_data.csv')
+data = pd.read_csv('prepared_data.csv')
 st.dataframe(data.head(10))

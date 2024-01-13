@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3f28b362-bddd-4482-bb3c-ee23de84ba99" name="Changes" comment="regression model 0.1">
+      <change afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/1_Analiza_danych.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Projekt/data_prepare.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cwiczenia_7/PAD_07_Testowanie Hipotez Statystycznych.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Cwiczenia_7/PAD_07_Testowanie Hipotez Statystycznych.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cwiczenia_7/PAD_08_Modelowanie Statystyczne.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Cwiczenia_7/PAD_08_Modelowanie Statystyczne.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/Home.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/Home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/1__Wizualizacja_danych.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/1_📈_Wizualizacja_danych.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/2__Wizualizacja_danych.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/2_📈_Wizualizacja_danych.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/data_prepare.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/data_prepare.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/prepared_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/prepared_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/regression_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/regression_model.ipynb" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GWawrzeniecki&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="fae312be-c14d-4394-a509-0965c1338ece" />
+        <option name="url" value="https://github.com/GWawrzeniecki/PAD.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2Yfn9fxKKWynpPmI9m6nR9juz6r" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/grzeg/PycharmProjects/PAD/Projekt&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\grzeg\PycharmProjects\PAD\Projekt" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\grzeg\PycharmProjects\PAD\Cwiczenia_7" />
+      <recent name="C:\Users\grzeg\PycharmProjects\PAD\Cwiczenia_5" />
+      <recent name="C:\Users\grzeg\PycharmProjects\PAD\Cwiczenia_3" />
+      <recent name="C:\Users\grzeg\PycharmProjects\PAD\Projekt" />
+      <recent name="C:\Users\grzeg\PycharmProjects\PAD\Cwiczenia_1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Home">
+    <configuration name="Home" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PAD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Projekt/dashboard" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Projekt/dashboard/Home.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dashboard" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PAD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Projekt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Projekt/dashboard.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="demo_menu (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PAD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Cwiczenia_6/3_streamlit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Cwiczenia_6/3_streamlit/demo_menu (1).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plot (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PAD" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Cwiczenia_6/3_streamlit" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Cwiczenia_6/3_streamlit/plot (1).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Home" />
+        <item itemvalue="Python.plot (1)" />
+        <item itemvalue="Python.dashboard" />
+        <item itemvalue="Python.demo_menu (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3f28b362-bddd-4482-bb3c-ee23de84ba99" name="Changes" comment="" />
+      <created>1700925352663</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1700925352663</updated>
+      <workItem from="1700925354099" duration="3709000" />
+      <workItem from="1701602325101" duration="773000" />
+      <workItem from="1703188851290" duration="933000" />
+      <workItem from="1703678192162" duration="1353000" />
+      <workItem from="1703693360646" duration="735000" />
+      <workItem from="1703694111240" duration="9256000" />
+      <workItem from="1703949990931" duration="4705000" />
+      <workItem from="1704021848318" duration="3937000" />
+      <workItem from="1704115056941" duration="16468000" />
+      <workItem from="1704219796098" duration="1534000" />
+      <workItem from="1704221357301" duration="2550000" />
+      <workItem from="1704307347892" duration="1073000" />
+      <workItem from="1704308440664" duration="3104000" />
+      <workItem from="1704535763721" duration="19236000" />
+      <workItem from="1704620680499" duration="3543000" />
+      <workItem from="1704626174842" duration="12538000" />
+      <workItem from="1704994778118" duration="5887000" />
+      <workItem from="1705053958720" duration="773000" />
+      <workItem from="1705147422586" duration="6337000" />
+    </task>
+    <task id="LOCAL-00001" summary="project 0.01">
+      <option name="closed" value="true" />
+      <created>1701602503419</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701602503419</updated>
+    </task>
+    <task id="LOCAL-00002" summary="classes 1 - 7">
+      <option name="closed" value="true" />
+      <created>1703694550691</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703694550691</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Repo structure&#10;project 0.1">
+      <option name="closed" value="true" />
+      <created>1704133791205</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704133791205</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Repo structure&#10;project 0.1">
+      <option name="closed" value="true" />
+      <created>1704135413254</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704135413254</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Repo structure&#10;project 0.1">
+      <option name="closed" value="true" />
+      <created>1704135854333</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704135854333</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Repo structure&#10;project 0.1">
+      <option name="closed" value="true" />
+      <created>1704136608206</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704136608206</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Classes 7&#10;data analyze 0.7 90">
+      <option name="closed" value="true" />
+      <created>1704566141645</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704566141645</updated>
+    </task>
+    <task id="LOCAL-00008" summary="deleted unnecessary code">
+      <option name="closed" value="true" />
+      <created>1704566569958</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704566569958</updated>
+    </task>
+    <task id="LOCAL-00009" summary="dashboard">
+      <option name="closed" value="true" />
+      <created>1704644725818</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704644725818</updated>
+    </task>
+    <task id="LOCAL-00010" summary="regression model 0.1">
+      <option name="closed" value="true" />
+      <created>1705053977985</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705053977985</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="project 0.01" />
+    <MESSAGE value="classes 1 - 7" />
+    <MESSAGE value="Repo structure&#10;project 0.1" />
+    <MESSAGE value="Classes 7&#10;data analyze 0.7 90" />
+    <MESSAGE value="deleted unnecessary code" />
+    <MESSAGE value="dashboard" />
+    <MESSAGE value="regression model 0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="regression model 0.1" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PAD$plot__1_.coverage" NAME="plot (1) Coverage Results" MODIFIED="1704627710744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cwiczenia_6/3_streamlit" />
+    <SUITE FILE_PATH="coverage/PAD$demo_menu__1_.coverage" NAME="demo_menu (1) Coverage Results" MODIFIED="1704627344767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cwiczenia_6/3_streamlit" />
+    <SUITE FILE_PATH="coverage/PAD$Home.coverage" NAME="Home Coverage Results" MODIFIED="1705148215246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Projekt/dashboard" />
+    <SUITE FILE_PATH="coverage/PAD$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1704627699010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Projekt" />
+  </component>
+</project>
