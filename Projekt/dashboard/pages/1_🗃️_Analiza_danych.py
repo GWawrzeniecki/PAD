@@ -13,4 +13,4 @@ def convert_and_display_notebook(notebook_path):
 
 st.markdown("# Analiza i czyszczenie zbioru danych")
 
-convert_and_display_notebook("data_prepare.ipynb")
+convert_and_display_notebook("pad/Projekt/data_prepare.ipynb")
