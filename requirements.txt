@@ -1,0 +1,6 @@
+streamlit
+pandas
+subprocess
+plotly.express
+plotly.graph_objects
+statsmodels.formula.api

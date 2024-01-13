@@ -4,19 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f28b362-bddd-4482-bb3c-ee23de84ba99" name="Changes" comment="dashboard 0.4">
-      <change afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/3__Model_regresji.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/3_🧮_Model_regresji.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/4__Wizualizacja_regresji.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/4_📈_Wizualizacja_regresji.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Projekt/regression_model.md" afterDir="false" />
+    <list default="true" id="3f28b362-bddd-4482-bb3c-ee23de84ba99" name="Changes" comment="project 0.8">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cwiczenia_7/PAD_08_Modelowanie Statystyczne.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Cwiczenia_7/PAD_08_Modelowanie Statystyczne.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/Home.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/Home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/1_Analiza_danych.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/1_️_Analiza_danych.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/1_🗃️_Analiza_danych.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/2__Wizualizacja_danych.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/2_📈_Wizualizacja_danych.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/2__Wizualizacja_danych.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/2_📈_Wizualizacja_danych.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/data_prepare.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/data_prepare.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/data_prepare.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/data_prepare.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/prepared_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/prepared_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projekt/regression_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/regression_model.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +208,7 @@
       <workItem from="1704626174842" duration="12538000" />
       <workItem from="1704994778118" duration="5887000" />
       <workItem from="1705053958720" duration="773000" />
-      <workItem from="1705147422586" duration="15432000" />
+      <workItem from="1705147422586" duration="15717000" />
     </task>
     <task id="LOCAL-00001" summary="project 0.01">
       <option name="closed" value="true" />
@@ -308,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705160628029</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="project 0.8">
+      <option name="closed" value="true" />
+      <created>1705171610739</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705171610739</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +333,8 @@
     <MESSAGE value="dashboard" />
     <MESSAGE value="regression model 0.1" />
     <MESSAGE value="dashboard 0.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="dashboard 0.4" />
+    <MESSAGE value="project 0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="project 0.8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
