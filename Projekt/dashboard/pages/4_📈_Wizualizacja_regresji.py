@@ -1,36 +1,22 @@
-import statsmodels.formula.api as smf
-import plotly.graph_objects as go
-import plotly.express as px
-import streamlit as st
 import pandas as pd
+import plotly.graph_objects as go
+import statsmodels.formula.api as smf
+import streamlit as st
 
 st.markdown("# Wizualizacja modelu regresji")
 
 data = pd.read_csv('Projekt/prepared_data.csv')
-model = smf.ols("price ~ carat + clarity", data=data).fit()
 
-data["fitted"] = model.fittedvalues
+clarity = st.selectbox("Regresja liniowa ", data['clarity'].unique())
+subset = data[data['clarity'] == clarity]
 
 fig = go.Figure()
-# Note that we still plot against the original Year variable
-fig.add_trace(go.Scatter(
-    x=data["carat"], y=data["price"], name="Year vs Sea Ice Extent (million sq km)", mode="markers"))
-fig.add_trace(go.Scatter(
-    x=data["carat"], y=data["fitted"], name="Fitted Regression Line"))
-fig.update_layout(title="Regression line of Year vs Sea Ice Extent (million sq km)", xaxis_title="Year",
-    yaxis_title="Sea Ice Extent")
+
+fig.add_trace(go.Scatter(x=subset["carat"], y=subset["price"], name="Carat vs Price", mode="markers"))
+
+fitted_values = smf.ols("price ~ carat", data=subset).fit().fittedvalues # wartości przewidziane
+fig.add_trace(go.Scatter(x=subset["carat"], y=fitted_values, mode='lines', name=f'Fitted - {clarity}'))
+
+fig.update_layout(title="Regresja liniowa zależność wzrostu cen od wielkości caratu i czystości wyrobu", xaxis_title="Carat", yaxis_title="Price")
 
 st.plotly_chart(fig, use_container_width=True)
-
-# # Create a scatter plot with different colors for each clarity level
-# fig = px.scatter(data, x="carat", y="price", color="clarity")
-#
-# # Add the regression line
-# fig.add_trace(go.Scatter(x=data["carat"], y=data["fitted"], name="Fitted Regression Line", mode="lines"))
-#
-# # Update the layout with appropriate titles
-# fig.update_layout(title="Price vs Carat Size by Clarity Level",
-#                   xaxis_title="carat",
-#                   yaxis_title="price")
-#
-# st.plotly_chart(fig, use_container_width=True)

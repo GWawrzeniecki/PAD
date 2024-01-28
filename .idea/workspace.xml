@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f28b362-bddd-4482-bb3c-ee23de84ba99" name="Changes" comment="added requirements.txt">
+      <change afterPath="$PROJECT_DIR$/Projekt/dashboard/utility.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/1_️_Analiza_danych.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/1_🗃️_Analiza_danych.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/1_️_Analiza_danych.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/1_🗃️_Analiza_danych.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/3__Model_regresji.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/3_🧮_Model_regresji.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/3__Model_regresji.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/3_🧮_Model_regresji.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/dashboard/pages/4__Wizualizacja_regresji.py" beforePathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/4_📈_Wizualizacja_regresji.py" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/dashboard/pages/4__Wizualizacja_regresji.py" afterPathEscaped="$PROJECT_DIR$/Projekt/dashboard/pages/4_📈_Wizualizacja_regresji.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/data_prepare.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/data_prepare.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/regression_model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/regression_model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projekt/regression_model.md" beforeDir="false" afterPath="$PROJECT_DIR$/Projekt/regression_model.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +83,11 @@
       <recent name="C:\Users\grzeg\PycharmProjects\PAD\Projekt" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\grzeg\PycharmProjects\PAD\Projekt\dashboard" />
       <recent name="C:\Users\grzeg\PycharmProjects\PAD\Cwiczenia_7" />
       <recent name="C:\Users\grzeg\PycharmProjects\PAD\Cwiczenia_5" />
       <recent name="C:\Users\grzeg\PycharmProjects\PAD\Cwiczenia_3" />
       <recent name="C:\Users\grzeg\PycharmProjects\PAD\Projekt" />
-      <recent name="C:\Users\grzeg\PycharmProjects\PAD\Cwiczenia_1" />
     </key>
   </component>
   <component name="RunManager" selected="Python.Home">
@@ -209,7 +214,9 @@
       <workItem from="1704626174842" duration="12538000" />
       <workItem from="1704994778118" duration="5887000" />
       <workItem from="1705053958720" duration="773000" />
-      <workItem from="1705147422586" duration="17469000" />
+      <workItem from="1705147422586" duration="18070000" />
+      <workItem from="1705867852870" duration="825000" />
+      <workItem from="1706351778320" duration="17711000" />
     </task>
     <task id="LOCAL-00001" summary="project 0.01">
       <option name="closed" value="true" />
@@ -379,7 +386,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705173456081</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added requirements.txt">
+      <option name="closed" value="true" />
+      <created>1705173652961</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1705173652961</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,21 +425,10 @@
     <MESSAGE value="added requirements.txt" />
     <option name="LAST_COMMIT_MESSAGE" value="added requirements.txt" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Projekt/dashboard/pages/4_📈_Wizualizacja_regresji.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/PAD$plot__1_.coverage" NAME="plot (1) Coverage Results" MODIFIED="1704627710744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cwiczenia_6/3_streamlit" />
     <SUITE FILE_PATH="coverage/PAD$demo_menu__1_.coverage" NAME="demo_menu (1) Coverage Results" MODIFIED="1704627344767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cwiczenia_6/3_streamlit" />
-    <SUITE FILE_PATH="coverage/PAD$Home.coverage" NAME="Home Coverage Results" MODIFIED="1705173519703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Projekt/dashboard" />
+    <SUITE FILE_PATH="coverage/PAD$Home.coverage" NAME="Home Coverage Results" MODIFIED="1706359796622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Projekt/dashboard" />
     <SUITE FILE_PATH="coverage/PAD$dashboard.coverage" NAME="dashboard Coverage Results" MODIFIED="1704627699010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Projekt" />
   </component>
 </project>
